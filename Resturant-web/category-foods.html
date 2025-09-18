@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Category Foods - My Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" height="40">
+      <h1>My Restaurant</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="food-title">Category</h2>
+
+    <!-- PIZZA -->
+    <section>
+    <h2 class="section-title">🍕 Pizza</h2>
+   
+
+      <div class="food-list">
+        <div class="food-item">
+          <img src="images/menu-pizza.jpg" alt="Margherita Pizza">
+          <h4>Margherita Pizza</h4>
+          <p>₹200</p>
+          <button class="order-now"
+            onclick="buyNow({ id: 3, name: 'Margherita Pizza', price: 200, img: 'images/menu-pizza.jpg' })">
+            Order Now
+          </button>
+        </div>
+
+        <div class="food-item">
+          <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+          <h4>Pepperoni Pizza</h4>
+          <p>₹250</p>
+          <button class="order-now"
+            onclick="buyNow({ id: 4, name: 'Pepperoni Pizza', price: 250, img: 'images/pizza.jpg' })">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BURGERS -->
+    <section>
+    
+    <h2 class="section-title">🍔 Burgers</h2>
+   
+
+      <div class="food-list">
+        <div class="food-item">
+          <img src="images/menu-burger.jpg" alt="Veg Burger">
+          <h4>Veg Burger</h4>
+          <p>₹150</p>
+          <button class="order-now"
+            onclick="buyNow({ id: 1, name: 'Veg Burger', price: 150, img: 'images/menu-burger.jpg' })">
+            Order Now
+          </button>
+        </div>
+
+        <div class="food-item">
+          <img src="images/burger.jpg" alt="Cheese Burger">
+          <h4>Cheese Burger</h4>
+          <p>₹180</p>
+          <button class="order-now"
+            onclick="buyNow({ id: 2, name: 'Cheese Burger', price: 180, img: 'images/burger.jpg' })">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOMOS -->
+    <section>
+   
+    <h2 class="section-title">🥟 Momos</h2>
+
+      <div class="food-list">
+        <div class="food-item">
+          <img src="images/menu-momo.jpg" alt="Steamed Momos">
+          <h4>Steamed Momos</h4>
+          <p>₹120</p>
+          <button class="order-now"
+            onclick="buyNow({ id: 5, name: 'Steamed Momos', price: 120, img: 'images/menu-momo.jpg' })">
+            Order Now
+          </button>
+        </div>
+
+        <div class="food-item">
+          <img src="images/momo.jpg" alt="Fried Momos">
+          <h4>Fried Momos</h4>
+          <p>₹140</p>
+          <button class="order-now"
+            onclick="buyNow({ id: 6, name: 'Fried Momos', price: 140, img: 'images/momo.jpg' })">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Make sure this script.js contains the buyNow(...) function -->
+  <script src="js/script.js"></script>
+</body>
+</html>

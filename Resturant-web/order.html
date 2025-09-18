@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Order / Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🍽️ My Restaurant</a>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Your Cart</h1>
+        <div id="cart-items"></div>
+
+        <h2>Place Your Order</h2>
+        <form id="order-form" class="order">
+            <input type="text" name="full-name" placeholder="Full Name" required>
+            <input type="text" name="contact" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="address" placeholder="Delivery Address" required></textarea>
+            <button id="placeOrderBtn">Place Order</button>
+
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
